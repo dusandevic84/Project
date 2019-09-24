@@ -79,7 +79,7 @@ public class HumanityStaff {
 	public static WebElement getEmployee(WebDriver driver, int index) {
 		String pd = "//a[contains(text(),'";
 		String dd = "')]";
-		String xpath = pd + getEmployeeName(driver, index) + ""+ getEmployeeSurname(driver, index) + dd;
+		String xpath = pd + getEmployeeName(driver, index) + " "+ getEmployeeSurname(driver, index) + dd;
 		return driver.findElement(By.xpath(xpath));
 	}
 	public static void clickEmployee(WebDriver driver, int index) {

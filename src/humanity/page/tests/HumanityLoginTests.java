@@ -20,6 +20,7 @@ public class HumanityLoginTests {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 //Provera login-a		
+				
 		HumanityHome.clickLoginButton(driver);
 		HumanityHome.inputEmailButton(driver, "kehoboged@net1mail.com");
 		HumanityHome.inputPassButton(driver, "testiranje");
@@ -34,5 +35,5 @@ public class HumanityLoginTests {
 			System.out.println("failed");
 		}
 	}
-
+	
 }
